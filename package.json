@@ -1,0 +1,26 @@
+{
+  "name": "try_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/script/imageLoader.js",
+  "dependencies": {
+    "uglify-loader": "^2.0.0",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.5",
+    "html-loader": "^0.5.1",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.1.4",
+    "url-loader": "^0.6.2",
+    "webpack-dev-server": "^2.9.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC"
+}
