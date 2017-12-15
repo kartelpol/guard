@@ -107,7 +107,6 @@ const ctx = canvas1.getContext('2d');
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return clock; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return guard; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return bullet; });
-/* unused harmony export explosion */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return explosion2; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return asteroid; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getCanvas__ = __webpack_require__(0);
@@ -122,24 +121,22 @@ const ctx = canvas1.getContext('2d');
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__img_stars_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__img_stars_png__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__img_redAsteroid_png__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__img_redAsteroid_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__img_redAsteroid_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__img_drawn_explosion_sprite_3_png__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__img_drawn_explosion_sprite_3_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__img_drawn_explosion_sprite_3_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__img_earthExplosion_png__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__img_earthExplosion_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__img_earthExplosion_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__img_asteroidbelt5_gif__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__img_asteroidbelt5_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__img_asteroidbelt5_gif__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__img_clock_png__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__img_clock_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__img_clock_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__img_shots_png__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__img_shots_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__img_shots_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__img_speed_png__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__img_speed_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__img_speed_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__img_playbutton_png__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__img_playbutton_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__img_playbutton_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__img_downArrow_png__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__img_downArrow_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__img_downArrow_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__img_leftArrow_png__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__img_leftArrow_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__img_leftArrow_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__img_earthExplosion_png__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__img_earthExplosion_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__img_earthExplosion_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__img_asteroidbelt5_gif__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__img_asteroidbelt5_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__img_asteroidbelt5_gif__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__img_clock_png__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__img_clock_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__img_clock_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__img_shots_png__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__img_shots_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__img_shots_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__img_speed_png__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__img_speed_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__img_speed_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__img_playbutton_png__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__img_playbutton_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__img_playbutton_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__img_downArrow_png__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__img_downArrow_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__img_downArrow_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__img_leftArrow_png__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__img_leftArrow_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__img_leftArrow_png__);
 
  
 
@@ -175,7 +172,7 @@ space.onload = function() {
 
 
 let pieces = new Image();
-pieces.src = __WEBPACK_IMPORTED_MODULE_9__img_asteroidbelt5_gif___default.a;
+pieces.src = __WEBPACK_IMPORTED_MODULE_8__img_asteroidbelt5_gif___default.a;
 pieces.onload = function() {
   loadedNumber++;
   console.log('loadedpiece');
@@ -190,7 +187,7 @@ earth.onload = function() {
 
 
 let gun = new Image();
-gun.src = __WEBPACK_IMPORTED_MODULE_11__img_shots_png___default.a;
+gun.src = __WEBPACK_IMPORTED_MODULE_10__img_shots_png___default.a;
 gun.onload = function() {
   loadedNumber++;
   console.log('loadedGun');
@@ -198,7 +195,7 @@ gun.onload = function() {
 
 
 let playButton = new Image();
-playButton.src = __WEBPACK_IMPORTED_MODULE_13__img_playbutton_png___default.a;
+playButton.src = __WEBPACK_IMPORTED_MODULE_12__img_playbutton_png___default.a;
 playButton.onload = function() {
   loadedNumber++;
   console.log('loadedButton');
@@ -206,7 +203,7 @@ playButton.onload = function() {
 
 
 let downArrow = new Image();
-downArrow.src = __WEBPACK_IMPORTED_MODULE_14__img_downArrow_png___default.a;
+downArrow.src = __WEBPACK_IMPORTED_MODULE_13__img_downArrow_png___default.a;
 downArrow.onload = function() {
   loadedNumber++;
   console.log('loadeddownArrow');
@@ -214,7 +211,7 @@ downArrow.onload = function() {
 
 
 let leftArrow = new Image();
-leftArrow.src = __WEBPACK_IMPORTED_MODULE_15__img_leftArrow_png___default.a;
+leftArrow.src = __WEBPACK_IMPORTED_MODULE_14__img_leftArrow_png___default.a;
 leftArrow.onload = function() {
   loadedNumber++;
   console.log('loadedLeeftArrow');
@@ -222,7 +219,7 @@ leftArrow.onload = function() {
 
 
 let speed = new Image();
-speed.src = __WEBPACK_IMPORTED_MODULE_12__img_speed_png___default.a;
+speed.src = __WEBPACK_IMPORTED_MODULE_11__img_speed_png___default.a;
 speed.onload = function() {
   loadedNumber++;
   console.log('loadedSpeed');
@@ -230,7 +227,7 @@ speed.onload = function() {
 
 
 let clock = new Image();
-clock.src = __WEBPACK_IMPORTED_MODULE_10__img_clock_png___default.a;
+clock.src = __WEBPACK_IMPORTED_MODULE_9__img_clock_png___default.a;
 clock.onload = function() {
   loadedNumber++;
   console.log('loadedClock');
@@ -251,15 +248,8 @@ bullet.onload = function createBullet() {
 };
 
 
-let explosion = new Image();
-explosion.src = __WEBPACK_IMPORTED_MODULE_7__img_drawn_explosion_sprite_3_png___default.a;
-explosion.onload = function createExplosion() {
-  loadedNumber++;
-  console.log('loadedExplosion');
-};
-
 let explosion2 = new Image();
-explosion2.src = __WEBPACK_IMPORTED_MODULE_8__img_earthExplosion_png___default.a;
+explosion2.src = __WEBPACK_IMPORTED_MODULE_7__img_earthExplosion_png___default.a;
 explosion2.onload = function createExplosion2() {
   loadedNumber++;
   console.log('loadedExplosion');
@@ -709,16 +699,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getCanvas__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sprite__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__startNewGame__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gameOver__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gameOver__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__eventHandler__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__background__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__gameAttributes__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__instances_guard__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shooting__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shooting__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__instances_asteroids__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__asteroidsMoving__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__collisionHandler__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__explosionHandler__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__asteroidsMoving__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__collisionHandler__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__explosionHandler__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__earthExplosionHandler__ = __webpack_require__(9);
 
 
@@ -1732,58 +1722,52 @@ module.exports = __webpack_require__.p + "./img/redAsteroid.png";
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/drawn-explosion-sprite-3.png";
+module.exports = __webpack_require__.p + "./img/earthExplosion.png";
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/earthExplosion.png";
+module.exports = __webpack_require__.p + "./img/asteroidbelt5.gif";
 
 /***/ }),
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/asteroidbelt5.gif";
+module.exports = __webpack_require__.p + "./img/clock.png";
 
 /***/ }),
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/clock.png";
+module.exports = __webpack_require__.p + "./img/shots.png";
 
 /***/ }),
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/shots.png";
+module.exports = __webpack_require__.p + "./img/speed.png";
 
 /***/ }),
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/speed.png";
+module.exports = __webpack_require__.p + "./img/playbutton.png";
 
 /***/ }),
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/playbutton.png";
+module.exports = __webpack_require__.p + "./img/downArrow.png";
 
 /***/ }),
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "./img/downArrow.png";
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
 module.exports = __webpack_require__.p + "./img/leftArrow.png";
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1820,7 +1804,7 @@ function gameOver() {
 }
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1869,7 +1853,7 @@ function shooting(ammunition){
 }
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1904,7 +1888,7 @@ function asteroidsMoving(asteroids) {
 }
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1967,7 +1951,7 @@ function explosionDetection(asteroids) {
 }
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
