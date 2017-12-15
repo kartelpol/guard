@@ -54,8 +54,6 @@ explosionConfig.getFlag = function() {
 
 explosionConfig.animate = function() {
   this.accessible = false;
-  console.log(this.dWidth);
-  console.log(this.growLimit);
   if (this.dWidth <= this.growLimit) {
    
   	this.render();

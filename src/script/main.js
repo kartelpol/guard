@@ -86,7 +86,6 @@ function draw() {
   dt = now - lastTime;
 
   drawMenu(dt);
-  attributes.drawInstructionMessage();
 
   if(speedAttributes.speedFlag) {
     attributes.speedMessage();
@@ -119,6 +118,8 @@ function draw() {
       }
     } 
 
+    attributes.drawInstructionMessage();
+    
     if(currentAsteroid && currentAsteroid.flag){
       currentAsteroid.animate();
     }
