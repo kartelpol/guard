@@ -1,25 +1,25 @@
 import '../css/style.css';
 
-import { canvas, ctx } from './getCanvas';
-import { sprite } from './sprite';
+import { canvas, ctx } from './tools/getCanvas';
+import { sprite } from './tools/sprite';
 
-import { playPressDetection, contentBeforeGame } from './startNewGame';
-import { gameOver } from './gameOver';
-import { resetClickCoordinates } from './eventHandler';
 
-import { drawSpace } from './background';
-import { attributes, speedAttributes, drawMenu } from './gameAttributes';
+import { drawSpace } from './appearanceAttributes/background';
+import { attributes, speedAttributes, drawMenu } from './appearanceAttributes/gameAttributes';
 
 
 import { guardConfig, bulletConfig } from './instances/guard';
-import { shooting } from './shooting';
+import { shooting } from './actions/shooting';
 
 import { asterConfig } from './instances/asteroids';
-import { asteroidsMoving } from './asteroidsMoving';
+import { asteroidsMoving } from './actions/asteroidsMoving';
 
-import { hittingCollisionDetection } from './collisionHandler';
-import { explosionConfig as explosion, getReadyDestructor } from './explosionHandler';
-import { earthExplosionConfig as earthExplosion } from './earthExplosionHandler';
+import { playPressDetection, contentBeforeGame } from './gameStates/startNewGame';
+import { gameOver } from './gameStates/gameOver';
+import { resetClickCoordinates } from './handlers/eventHandler';
+import { hittingCollisionDetection } from './handlers/collisionHandler';
+import { explosionConfig as explosion, getReadyDestructor } from './actions/explosionHandler';
+import { earthExplosionConfig as earthExplosion } from './actions/earthExplosionHandler';
 
 
 let ammunition = [];
@@ -43,7 +43,7 @@ export function init() {
     ammunition.push(sprite(bulletConfig));
   }
   
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     asteroids.push(sprite(asterConfig));
     destructedAsteroids.push(sprite(explosion));
   }
@@ -91,9 +91,6 @@ function draw() {
     attributes.speedMessage();
   }
 
-   if (attributes.shots - attributes.score >= 10 && guardConfig.step < 7) {
-        attributes.messageText = "A lot of energy is spent on shots. Be more accurate"
-   }
   
     asteroidsMoving(asteroids);
     guardConfig.moving();
@@ -102,9 +99,7 @@ function draw() {
     collisionCoordinates = hittingCollisionDetection(activeBulletsNumber, ammunition, asteroids);
     
     if (collisionCoordinates) {
-      if(collisionCoordinates.dy > canvas.height - 3 * guardConfig.height) {
-        attributes.messageText = "Be careful. Asteroid is too near."
-      } 
+     
       guardConfig.speedUpdate();
 
       speedAttributes.setCoordinates(collisionCoordinates);
@@ -117,7 +112,10 @@ function draw() {
         currentAsteroid.setCoordinates(collisionCoordinates);
       }
     }
-
+    
+    if (attributes.score === attributes.shots && attributes.shots !== 0) {
+      attributes.messageText = 'Exellent precision!';
+    }
     attributes.drawInstructionMessage();
 
     if(currentAsteroid && currentAsteroid.flag){
@@ -129,6 +127,8 @@ function draw() {
     earthExplosion.animate();
     gameOver();
     drawMenu(dt);
+    attributes.messageText = "You are destroyed. Keep on training!";
+    attributes.drawInstructionMessage();
   }
 }
     requestAnimationFrame(draw);

@@ -96,56 +96,43 @@ const ctx = canvas1.getContext('2d');
 
 "use strict";
 /* unused harmony export loadedNumber */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return space; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return pieces; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return earth; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return gun; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return playButton; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return downArrow; });
-/* unused harmony export leftArrow */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return speed; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return space; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return pieces; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return earth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return gun; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return playButton; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return speed; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return clock; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return guard; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return guard; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return bullet; });
-/* unused harmony export explosion */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return explosion2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return explosion2; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return asteroid; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getCanvas__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__main__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__img_back2_jpg__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__img_back2_jpg__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__img_back2_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__img_back2_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__img_earth_png__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__img_earth_png__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__img_earth_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__img_earth_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__img_guard_png__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__img_guard_png__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__img_guard_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__img_guard_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__img_stars_png__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__img_stars_png__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__img_stars_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__img_stars_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__img_redAsteroid_png__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__img_redAsteroid_png__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__img_redAsteroid_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__img_redAsteroid_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__img_drawn_explosion_sprite_3_png__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__img_drawn_explosion_sprite_3_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__img_drawn_explosion_sprite_3_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__img_earthExplosion_png__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__img_earthExplosion_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__img_earthExplosion_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__img_asteroidbelt5_gif__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__img_asteroidbelt5_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__img_asteroidbelt5_gif__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__img_clock_png__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__img_clock_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__img_clock_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__img_shots_png__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__img_shots_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__img_shots_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__img_speed_png__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__img_speed_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__img_speed_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__img_playbutton_png__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__img_playbutton_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__img_playbutton_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__img_downArrow_png__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__img_downArrow_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__img_downArrow_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__img_leftArrow_png__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__img_leftArrow_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__img_leftArrow_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__img_earthExplosion_png__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__img_earthExplosion_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__img_earthExplosion_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__img_asteroidbelt5_gif__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__img_asteroidbelt5_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__img_asteroidbelt5_gif__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__img_clock_png__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__img_clock_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__img_clock_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__img_shots_png__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__img_shots_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__img_shots_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__img_speed_png__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__img_speed_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__img_speed_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__img_playbutton_png__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__img_playbutton_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__img_playbutton_png__);
 
  
-
-
-
-
 
 
 
@@ -175,7 +162,7 @@ space.onload = function() {
 
 
 let pieces = new Image();
-pieces.src = __WEBPACK_IMPORTED_MODULE_9__img_asteroidbelt5_gif___default.a;
+pieces.src = __WEBPACK_IMPORTED_MODULE_8__img_asteroidbelt5_gif___default.a;
 pieces.onload = function() {
   loadedNumber++;
   console.log('loadedpiece');
@@ -190,7 +177,7 @@ earth.onload = function() {
 
 
 let gun = new Image();
-gun.src = __WEBPACK_IMPORTED_MODULE_11__img_shots_png___default.a;
+gun.src = __WEBPACK_IMPORTED_MODULE_10__img_shots_png___default.a;
 gun.onload = function() {
   loadedNumber++;
   console.log('loadedGun');
@@ -198,31 +185,15 @@ gun.onload = function() {
 
 
 let playButton = new Image();
-playButton.src = __WEBPACK_IMPORTED_MODULE_13__img_playbutton_png___default.a;
+playButton.src = __WEBPACK_IMPORTED_MODULE_12__img_playbutton_png___default.a;
 playButton.onload = function() {
   loadedNumber++;
   console.log('loadedButton');
 };
 
 
-let downArrow = new Image();
-downArrow.src = __WEBPACK_IMPORTED_MODULE_14__img_downArrow_png___default.a;
-downArrow.onload = function() {
-  loadedNumber++;
-  console.log('loadeddownArrow');
-};
-
-
-let leftArrow = new Image();
-leftArrow.src = __WEBPACK_IMPORTED_MODULE_15__img_leftArrow_png___default.a;
-leftArrow.onload = function() {
-  loadedNumber++;
-  console.log('loadedLeeftArrow');
-};
-
-
 let speed = new Image();
-speed.src = __WEBPACK_IMPORTED_MODULE_12__img_speed_png___default.a;
+speed.src = __WEBPACK_IMPORTED_MODULE_11__img_speed_png___default.a;
 speed.onload = function() {
   loadedNumber++;
   console.log('loadedSpeed');
@@ -230,7 +201,7 @@ speed.onload = function() {
 
 
 let clock = new Image();
-clock.src = __WEBPACK_IMPORTED_MODULE_10__img_clock_png___default.a;
+clock.src = __WEBPACK_IMPORTED_MODULE_9__img_clock_png___default.a;
 clock.onload = function() {
   loadedNumber++;
   console.log('loadedClock');
@@ -251,15 +222,8 @@ bullet.onload = function createBullet() {
 };
 
 
-let explosion = new Image();
-explosion.src = __WEBPACK_IMPORTED_MODULE_7__img_drawn_explosion_sprite_3_png___default.a;
-explosion.onload = function createExplosion() {
-  loadedNumber++;
-  console.log('loadedExplosion');
-};
-
 let explosion2 = new Image();
-explosion2.src = __WEBPACK_IMPORTED_MODULE_8__img_earthExplosion_png___default.a;
+explosion2.src = __WEBPACK_IMPORTED_MODULE_7__img_earthExplosion_png___default.a;
 explosion2.onload = function createExplosion2() {
   loadedNumber++;
   console.log('loadedExplosion');
@@ -354,8 +318,8 @@ function sprite(options) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["b"] = drawMenu;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getCanvas__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__imageLoader__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_imageLoader__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__instances_guard_js__ = __webpack_require__(4);
 
 
@@ -385,16 +349,16 @@ const attributes = {
 
   speedMessage() {
     if( speedAttributes.opacity > 0.1 ) {
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = '16px Arial';
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].globalAlpha = speedAttributes.opacity;
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('+ Speed', speedAttributes.dx, speedAttributes.dy);
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = '16px Arial';
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].globalAlpha = speedAttributes.opacity;
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('+ Speed', speedAttributes.dx, speedAttributes.dy);
     speedAttributes.opacity -= 0.1;
     speedAttributes.dx -= 2;
     speedAttributes.dy -= 2;
     } else {
       speedAttributes.speedFlag = false;
-      __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].globalAlpha = 1;
+      __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].globalAlpha = 1;
       speedAttributes.opacity = 1;
     } 
   },
@@ -404,8 +368,8 @@ const attributes = {
   secondLine: "",
 
   drawInstructionMessage() {
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = '16px Arial';
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = '16px Arial';
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
 
     if(this.messageText.length > 40) {
       arr = this.messageText.split(" ");
@@ -417,13 +381,13 @@ const attributes = {
         this.secondLine += arr[i] + " ";
       }
      
-     __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText(this.firstLine , __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width - 335, 30);
-     __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText(this.secondLine, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width - 335, 50);
+     __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText(this.firstLine , __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width - 335, 30);
+     __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText(this.secondLine, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width - 335, 50);
      
      this.firstLine = "";
      this.secondLine = "";
     } else {
-     __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText(this.messageText , __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width - 335, 30);
+     __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText(this.messageText , __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width - 335, 30);
     }
   }
 
@@ -434,62 +398,62 @@ const attributes = {
 
 function drawMenu(dt){
     
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].beginPath();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].rect( 10, 10, 230, 25);
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#02061a';
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fill();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].closePath();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].beginPath();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].rect( 10, 10, 230, 25);
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#02061a';
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fill();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].closePath();
 
 
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].beginPath();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].rect( 10, 45, 230, 25);
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#02061a';
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fill();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].closePath();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].beginPath();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].rect( 10, 45, 230, 25);
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#02061a';
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fill();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].closePath();
 
     
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].beginPath();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].rect( 10, 80, 230, 25);
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#02061a';
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fill();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].closePath();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].beginPath();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].rect( 10, 80, 230, 25);
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#02061a';
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fill();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].closePath();
 
 
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].beginPath();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].rect( 10, 120, 230, 25);
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#02061a';
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fill();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].closePath();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].beginPath();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].rect( 10, 120, 230, 25);
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#02061a';
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fill();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].closePath();
    
 
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_1__imageLoader__["h" /* gun */], 0, 0, 1200, 750, 100, 10, 50, 31 );
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_1__imageLoader__["l" /* speed */], 0, 0, 512, 512, 15, 40, 35, 35 ); 
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_1__imageLoader__["c" /* clock */], 0, 0, 300, 300, 15, 80, 35, 35); 
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_1__imageLoader__["j" /* playButton */], 0, 0, 368, 368, 100, 117, 40, 40 );
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_1__tools_imageLoader__["g" /* gun */], 0, 0, 1200, 750, 100, 10, 50, 31 );
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_1__tools_imageLoader__["k" /* speed */], 0, 0, 512, 512, 15, 40, 35, 35 ); 
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_1__tools_imageLoader__["c" /* clock */], 0, 0, 300, 300, 15, 80, 35, 35); 
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_1__tools_imageLoader__["i" /* playButton */], 0, 0, 368, 368, 100, 117, 40, 40 );
    
 
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = '16px Arial';
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Shots:  ' + attributes.shots , 15, 30);
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = '16px Arial';
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Shots:  ' + attributes.shots , 15, 30);
 
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = '16px Arial';
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Score:  ' + attributes.score , 170, 30);
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = '16px Arial';
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Score:  ' + attributes.score , 170, 30);
 
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = '16px Arial';
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Speed:  ' + attributes.speed.toFixed(2) + 'km/sec', 80, 65);
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = '16px Arial';
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Speed:  ' + attributes.speed.toFixed(2) + 'km/sec', 80, 65);
 
 
    attributes.time = timeParser(dt);
-   __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Time:  ' + attributes.time, 80, 100);
+   __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Time:  ' + attributes.time, 80, 100);
 
   /* ctx.fillText('Play ', 80, 145);*/
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].beginPath();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].rect( __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width - 350, 10, 330, 60);
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#02061a';
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fill();
-    __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].closePath();  
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].beginPath();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].rect( __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width - 350, 10, 330, 60);
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#02061a';
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fill();
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].closePath();  
 
  }
 
@@ -523,11 +487,11 @@ function timeFormatting(val) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return guardConfig; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return bulletConfig; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__eventHandler__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getCanvas__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gameAttributes__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__imageLoader__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sprite__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handlers_eventHandler__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appearanceAttributes_gameAttributes__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tools_imageLoader__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tools_sprite__ = __webpack_require__(2);
 
 
 
@@ -541,61 +505,56 @@ let widthOfGuard = 200;
 let guardConfig = {
   height: 112,
   width: widthOfGuard,
-  guardX: (__WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].width - widthOfGuard) / 2,
-  step: 2,
+  guardX: (__WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].width - widthOfGuard) / 2,
+  step: 3,
 
   moving() {
 
-    if (__WEBPACK_IMPORTED_MODULE_0__eventHandler__["e" /* rightPressed */] && this.guardX <= __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].width - this.width - this.step) {
+    if (__WEBPACK_IMPORTED_MODULE_0__handlers_eventHandler__["e" /* rightPressed */] && this.guardX <= __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].width - this.width - this.step) {
       this.guardX += this.step;
-      __WEBPACK_IMPORTED_MODULE_1__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_3__imageLoader__["g" /* guard */], this.guardX, __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].height - this.height, this.width, this.height);
-    } else if (__WEBPACK_IMPORTED_MODULE_0__eventHandler__["c" /* leftPressed */] && this.guardX > 0 + this.step) {
+      __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_3__tools_imageLoader__["f" /* guard */], this.guardX, __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].height - this.height, this.width, this.height);
+    } else if (__WEBPACK_IMPORTED_MODULE_0__handlers_eventHandler__["c" /* leftPressed */] && this.guardX > 0 + this.step) {
       this.guardX -= this.step;
-      __WEBPACK_IMPORTED_MODULE_1__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_3__imageLoader__["g" /* guard */], this.guardX, __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].height - this.height, this.width, this.height);
-    } /*else if (relativeX > 0 && relativeX < canvas.width) {
-      this.guardX = relativeX - this.width / 2;
-      ctx.drawImage(guard, this.guardX, canvas.height - this.height, this.width, this.height);
-    }*/
-    __WEBPACK_IMPORTED_MODULE_1__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_3__imageLoader__["g" /* guard */], this.guardX, __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].height - this.height, this.width, this.height);
+      __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_3__tools_imageLoader__["f" /* guard */], this.guardX, __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].height - this.height, this.width, this.height);
+    } 
+    __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_3__tools_imageLoader__["f" /* guard */], this.guardX, __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].height - this.height, this.width, this.height);
   },
 
   speedUpdate() {
     if(this.step <= 5){
           this.step += 0.15;
-          __WEBPACK_IMPORTED_MODULE_2__gameAttributes__["c" /* speedAttributes */].speedFlag = true;
+          __WEBPACK_IMPORTED_MODULE_2__appearanceAttributes_gameAttributes__["c" /* speedAttributes */].speedFlag = true;
         } else if (this.step < 9) {
           this.step += 0.1;
-          __WEBPACK_IMPORTED_MODULE_2__gameAttributes__["c" /* speedAttributes */].speedFlag = true;
-          __WEBPACK_IMPORTED_MODULE_2__gameAttributes__["a" /* attributes */].messageText = "Be careful, your accuracy is reduced due to high speed";
+          __WEBPACK_IMPORTED_MODULE_2__appearanceAttributes_gameAttributes__["c" /* speedAttributes */].speedFlag = true;
+          __WEBPACK_IMPORTED_MODULE_2__appearanceAttributes_gameAttributes__["a" /* attributes */].messageText = "Be careful, your accuracy is reduced due to high speed";
         } else {
-          __WEBPACK_IMPORTED_MODULE_2__gameAttributes__["a" /* attributes */].messageText = "Your speed is maximal."
+          __WEBPACK_IMPORTED_MODULE_2__appearanceAttributes_gameAttributes__["a" /* attributes */].messageText = "You\'ve reached the maximum allowed speed. Be maximal precise!";
         }
     }
 };
 
 
 
-const bulletWidth = 50;
-const bulletHeight = 50;
+const bulletWidth = 40;
+const bulletHeight = 40;
 
 let bulletConfig = {
-  context: __WEBPACK_IMPORTED_MODULE_1__getCanvas__["b" /* ctx */],
+  context: __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["b" /* ctx */],
   width: bulletWidth,
   height: bulletHeight,
-  image: __WEBPACK_IMPORTED_MODULE_3__imageLoader__["b" /* bullet */],
+  image: __WEBPACK_IMPORTED_MODULE_3__tools_imageLoader__["b" /* bullet */],
   dx: guardConfig.guardX + (guardConfig.width / 2) - (bulletWidth / 2),
-  dy: __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].height - guardConfig.height - bulletHeight,
+  dy: __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].height - guardConfig.height - bulletHeight,
   speed: -25,
   acceleration: 0.97,
   growSpeed: -0.2,
-/*  ticksPerFrame: 1,
-  numberOfFrames: 8,*/
 };
 
 
 bulletConfig.initial = function() {
   this.dx = guardConfig.guardX + (guardConfig.width / 2) - (bulletWidth / 2);
-  this.dy = __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].height - guardConfig.height - bulletHeight;
+  this.dy = __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].height - guardConfig.height - bulletHeight;
   this.accessible = true;
   this.dWidth = bulletWidth;
   this.dHeight = bulletHeight;
@@ -609,10 +568,9 @@ bulletConfig.accessible = true;
 bulletConfig.moving = function() {
   this.accessible = false;
   
-  if (this.dy === __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].height - guardConfig.height - bulletHeight) {
+  if (this.dy === __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].height - guardConfig.height - bulletHeight) {
     this.dx = guardConfig.guardX + (guardConfig.width / 2) - (bulletWidth / 2);
   }
-    /*console.log(this.dx + '  ' + this.dy);*/
 
   if (this.dy >= 0) {
     this.render();
@@ -635,7 +593,7 @@ bulletConfig.moving = function() {
 /* harmony export (immutable) */ __webpack_exports__["b"] = getSpaceState;
 /* harmony export (immutable) */ __webpack_exports__["f"] = setSpaceState;
 /* harmony export (immutable) */ __webpack_exports__["d"] = resetClickCoordinates;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__ = __webpack_require__(0);
 
 
 let rightPressed = false;
@@ -706,20 +664,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["init"] = init;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_style_css__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__css_style_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getCanvas__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sprite__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__startNewGame__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gameOver__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__eventHandler__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__background__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__gameAttributes__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__instances_guard__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shooting__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__instances_asteroids__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__asteroidsMoving__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__collisionHandler__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__explosionHandler__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__earthExplosionHandler__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tools_sprite__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appearanceAttributes_background__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__instances_guard__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__actions_shooting__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__instances_asteroids__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__actions_asteroidsMoving__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__gameStates_startNewGame__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__gameStates_gameOver__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__handlers_eventHandler__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__handlers_collisionHandler__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__actions_explosionHandler__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__actions_earthExplosionHandler__ = __webpack_require__(9);
 
 
 
@@ -762,12 +720,12 @@ let dt;
 function init() {
 
   for (let i = 0; i < 10; i++) {
-    ammunition.push(Object(__WEBPACK_IMPORTED_MODULE_2__sprite__["a" /* sprite */])(__WEBPACK_IMPORTED_MODULE_8__instances_guard__["a" /* bulletConfig */]));
+    ammunition.push(Object(__WEBPACK_IMPORTED_MODULE_2__tools_sprite__["a" /* sprite */])(__WEBPACK_IMPORTED_MODULE_5__instances_guard__["a" /* bulletConfig */]));
   }
   
-  for (let i = 0; i < 3; i++) {
-    asteroids.push(Object(__WEBPACK_IMPORTED_MODULE_2__sprite__["a" /* sprite */])(__WEBPACK_IMPORTED_MODULE_10__instances_asteroids__["a" /* asterConfig */]));
-    destructedAsteroids.push(Object(__WEBPACK_IMPORTED_MODULE_2__sprite__["a" /* sprite */])(__WEBPACK_IMPORTED_MODULE_13__explosionHandler__["a" /* explosionConfig */]));
+  for (let i = 0; i < 4; i++) {
+    asteroids.push(Object(__WEBPACK_IMPORTED_MODULE_2__tools_sprite__["a" /* sprite */])(__WEBPACK_IMPORTED_MODULE_7__instances_asteroids__["a" /* asterConfig */]));
+    destructedAsteroids.push(Object(__WEBPACK_IMPORTED_MODULE_2__tools_sprite__["a" /* sprite */])(__WEBPACK_IMPORTED_MODULE_13__actions_explosionHandler__["a" /* explosionConfig */]));
   }
 
   lastTime = Date.now();
@@ -777,17 +735,17 @@ function init() {
 
 function start() {
 
-  if (!Object(__WEBPACK_IMPORTED_MODULE_3__startNewGame__["b" /* playPressDetection */])()) {
-    __WEBPACK_IMPORTED_MODULE_1__getCanvas__["b" /* ctx */].clearRect(0, 0, __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].width, __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].height);
+  if (!Object(__WEBPACK_IMPORTED_MODULE_9__gameStates_startNewGame__["b" /* playPressDetection */])()) {
+    __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["b" /* ctx */].clearRect(0, 0, __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].width, __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].height);
    
-    Object(__WEBPACK_IMPORTED_MODULE_6__background__["a" /* drawSpace */])();
-    Object(__WEBPACK_IMPORTED_MODULE_7__gameAttributes__["b" /* drawMenu */])(0);
-    __WEBPACK_IMPORTED_MODULE_7__gameAttributes__["a" /* attributes */].drawInstructionMessage();
-    Object(__WEBPACK_IMPORTED_MODULE_3__startNewGame__["a" /* contentBeforeGame */])();
+    Object(__WEBPACK_IMPORTED_MODULE_3__appearanceAttributes_background__["a" /* drawSpace */])();
+    Object(__WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["b" /* drawMenu */])(0);
+    __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].drawInstructionMessage();
+    Object(__WEBPACK_IMPORTED_MODULE_9__gameStates_startNewGame__["a" /* contentBeforeGame */])();
 
     requestAnimationFrame(start);
   } else {
-    Object(__WEBPACK_IMPORTED_MODULE_5__eventHandler__["d" /* resetClickCoordinates */])();
+    Object(__WEBPACK_IMPORTED_MODULE_11__handlers_eventHandler__["d" /* resetClickCoordinates */])();
     lastTime = Date.now();
     draw();
   }
@@ -795,61 +753,62 @@ function start() {
 
 
 function draw() {
-  __WEBPACK_IMPORTED_MODULE_1__getCanvas__["b" /* ctx */].clearRect(0, 0, __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].width, __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].height);
+  __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["b" /* ctx */].clearRect(0, 0, __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].width, __WEBPACK_IMPORTED_MODULE_1__tools_getCanvas__["a" /* canvas */].height);
 
-  Object(__WEBPACK_IMPORTED_MODULE_6__background__["a" /* drawSpace */])();
+  Object(__WEBPACK_IMPORTED_MODULE_3__appearanceAttributes_background__["a" /* drawSpace */])();
 
-  if (Object(__WEBPACK_IMPORTED_MODULE_3__startNewGame__["b" /* playPressDetection */])() ) {
+  if (Object(__WEBPACK_IMPORTED_MODULE_9__gameStates_startNewGame__["b" /* playPressDetection */])() ) {
     document.location.reload();
   }
 
-  if (!__WEBPACK_IMPORTED_MODULE_14__earthExplosionHandler__["a" /* earthExplosionConfig */].flag) {
+  if (!__WEBPACK_IMPORTED_MODULE_14__actions_earthExplosionHandler__["a" /* earthExplosionConfig */].flag) {
   now = Date.now();
   dt = now - lastTime;
 
-  Object(__WEBPACK_IMPORTED_MODULE_7__gameAttributes__["b" /* drawMenu */])(dt);
-  __WEBPACK_IMPORTED_MODULE_7__gameAttributes__["a" /* attributes */].drawInstructionMessage();
+  Object(__WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["b" /* drawMenu */])(dt);
 
-  if(__WEBPACK_IMPORTED_MODULE_7__gameAttributes__["c" /* speedAttributes */].speedFlag) {
-    __WEBPACK_IMPORTED_MODULE_7__gameAttributes__["a" /* attributes */].speedMessage();
+  if(__WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["c" /* speedAttributes */].speedFlag) {
+    __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].speedMessage();
   }
 
-   if (__WEBPACK_IMPORTED_MODULE_7__gameAttributes__["a" /* attributes */].shots - __WEBPACK_IMPORTED_MODULE_7__gameAttributes__["a" /* attributes */].score >= 10 && __WEBPACK_IMPORTED_MODULE_8__instances_guard__["b" /* guardConfig */].step < 7) {
-        __WEBPACK_IMPORTED_MODULE_7__gameAttributes__["a" /* attributes */].messageText = "A lot of energy is spent on shots. Be more accurate"
-   }
   
-    Object(__WEBPACK_IMPORTED_MODULE_11__asteroidsMoving__["a" /* asteroidsMoving */])(asteroids);
-    __WEBPACK_IMPORTED_MODULE_8__instances_guard__["b" /* guardConfig */].moving();
+    Object(__WEBPACK_IMPORTED_MODULE_8__actions_asteroidsMoving__["a" /* asteroidsMoving */])(asteroids);
+    __WEBPACK_IMPORTED_MODULE_5__instances_guard__["b" /* guardConfig */].moving();
 
-    activeBulletsNumber = Object(__WEBPACK_IMPORTED_MODULE_9__shooting__["a" /* shooting */])(ammunition);
-    collisionCoordinates = Object(__WEBPACK_IMPORTED_MODULE_12__collisionHandler__["a" /* hittingCollisionDetection */])(activeBulletsNumber, ammunition, asteroids);
+    activeBulletsNumber = Object(__WEBPACK_IMPORTED_MODULE_6__actions_shooting__["a" /* shooting */])(ammunition);
+    collisionCoordinates = Object(__WEBPACK_IMPORTED_MODULE_12__handlers_collisionHandler__["a" /* hittingCollisionDetection */])(activeBulletsNumber, ammunition, asteroids);
     
     if (collisionCoordinates) {
-      if(collisionCoordinates.dy > __WEBPACK_IMPORTED_MODULE_1__getCanvas__["a" /* canvas */].height - 3 * __WEBPACK_IMPORTED_MODULE_8__instances_guard__["b" /* guardConfig */].height) {
-        __WEBPACK_IMPORTED_MODULE_7__gameAttributes__["a" /* attributes */].messageText = "Be careful. Asteroid is too near."
-      } 
-      __WEBPACK_IMPORTED_MODULE_8__instances_guard__["b" /* guardConfig */].speedUpdate();
+     
+      __WEBPACK_IMPORTED_MODULE_5__instances_guard__["b" /* guardConfig */].speedUpdate();
 
-      __WEBPACK_IMPORTED_MODULE_7__gameAttributes__["c" /* speedAttributes */].setCoordinates(collisionCoordinates);
-      __WEBPACK_IMPORTED_MODULE_7__gameAttributes__["a" /* attributes */].score++;
-      __WEBPACK_IMPORTED_MODULE_7__gameAttributes__["a" /* attributes */].speed = __WEBPACK_IMPORTED_MODULE_8__instances_guard__["b" /* guardConfig */].step;
+      __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["c" /* speedAttributes */].setCoordinates(collisionCoordinates);
+      __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].score++;
+      __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].speed = __WEBPACK_IMPORTED_MODULE_5__instances_guard__["b" /* guardConfig */].step;
       
-      currentAsteroid = Object(__WEBPACK_IMPORTED_MODULE_13__explosionHandler__["b" /* getReadyDestructor */])(destructedAsteroids);
+      currentAsteroid = Object(__WEBPACK_IMPORTED_MODULE_13__actions_explosionHandler__["b" /* getReadyDestructor */])(destructedAsteroids);
       if(currentAsteroid) {
         currentAsteroid.flag = true;    
         currentAsteroid.setCoordinates(collisionCoordinates);
       }
-    } 
+    }
+    
+    if (__WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].score === __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].shots && __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].shots !== 0) {
+      __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].messageText = 'Exellent precision!';
+    }
+    __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].drawInstructionMessage();
 
     if(currentAsteroid && currentAsteroid.flag){
       currentAsteroid.animate();
     }
   
  } else {
-  if(__WEBPACK_IMPORTED_MODULE_14__earthExplosionHandler__["a" /* earthExplosionConfig */].flag){
-    __WEBPACK_IMPORTED_MODULE_14__earthExplosionHandler__["a" /* earthExplosionConfig */].animate();
-    Object(__WEBPACK_IMPORTED_MODULE_4__gameOver__["a" /* gameOver */])();
-    Object(__WEBPACK_IMPORTED_MODULE_7__gameAttributes__["b" /* drawMenu */])(dt);
+  if(__WEBPACK_IMPORTED_MODULE_14__actions_earthExplosionHandler__["a" /* earthExplosionConfig */].flag){
+    __WEBPACK_IMPORTED_MODULE_14__actions_earthExplosionHandler__["a" /* earthExplosionConfig */].animate();
+    Object(__WEBPACK_IMPORTED_MODULE_10__gameStates_gameOver__["a" /* gameOver */])();
+    Object(__WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["b" /* drawMenu */])(dt);
+    __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].messageText = "You are destroyed. Keep on training!";
+    __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_gameAttributes__["a" /* attributes */].drawInstructionMessage();
   }
 }
     requestAnimationFrame(draw);
@@ -865,9 +824,9 @@ function draw() {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return earthDy; });
 /* harmony export (immutable) */ __webpack_exports__["a"] = drawSpace;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getCanvas__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sprite__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__imageLoader__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_sprite__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tools_imageLoader__ = __webpack_require__(1);
 
 
 
@@ -876,21 +835,21 @@ function draw() {
 
 let dx = 0;
 let dy1 = 0;
-let dy2 = -__WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height;
+let dy2 = -__WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height;
 
 const imageWidth = 4000;
 const imageHeight = 2250;
 
-let eatrhDx = __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 1.3;
+let eatrhDx = __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 1.3;
 let earthDy = 576;
 
 
 function drawSpace() {
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_2__imageLoader__["k" /* space */], 0, 0, 4000, 2180, dx, dy1, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height);
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_2__imageLoader__["k" /* space */], 0, 0, 4000, 2180, dx, dy2, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_2__tools_imageLoader__["j" /* space */], 0, 0, 4000, 2180, dx, dy1, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_2__tools_imageLoader__["j" /* space */], 0, 0, 4000, 2180, dx, dy2, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height);
 
   if( dy2 >= -0.1 && dy2 <= 0 /*dy1 >= canvas.height*/) {
-  	dy1 = -__WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height;
+  	dy1 = -__WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height;
   	console.log(dy1);
   } else {
     dy1 += 0.1;
@@ -898,12 +857,12 @@ function drawSpace() {
 
 
   if( dy1 >=  - 0.1 && dy1 <=0) {
-  	dy2 = -__WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height;
+  	dy2 = -__WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height;
   } else {
     dy2 += 0.1;
   }
 
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_2__imageLoader__["e" /* earth */], 0, 0, 1024, 576, -__WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.15, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height * 0.5, eatrhDx, earthDy);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_2__tools_imageLoader__["d" /* earth */], 0, 0, 1024, 576, -__WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.15, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height * 0.5, eatrhDx, earthDy);
 } 
 
 /***/ }),
@@ -912,9 +871,9 @@ function drawSpace() {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return asterConfig; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getCanvas__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sprite__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__imageLoader__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_sprite__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tools_imageLoader__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__guard_js__ = __webpack_require__(4);
 
 
@@ -925,24 +884,24 @@ let asteroidWidth = 750;
 let asteroidHeight = 750;
 
 let asterConfig = {
-  context: __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */],
+  context: __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */],
   width: asteroidWidth,
   height: asteroidHeight,
-  image: __WEBPACK_IMPORTED_MODULE_2__imageLoader__["a" /* asteroid */],
-  dx: Math.random() * (__WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width - asteroidWidth) + (asteroidWidth / 2),
-  dy: Math.random() * __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height * 0.1,
-  dWidth: 2,
-  dHeight: 2,
+  image: __WEBPACK_IMPORTED_MODULE_2__tools_imageLoader__["a" /* asteroid */],
+  dx: Math.random() * (__WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width - asteroidWidth) + (asteroidWidth / 2),
+  dy: Math.random() * __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height * 0.1,
+  dWidth: 0.5,
+  dHeight: 0.5,
   speed: 0.3,
-  acceleration: 1.003,
-  growSpeed: 0.07,
+  acceleration: 1.005,
+  growSpeed: 0.08,
 };
 
 
 
 asterConfig.moving = function() {
   
-  if(this.dy <= __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height ) {
+  if(this.dy <= __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height ) {
     this.render();
     this.update();
   } else {
@@ -954,8 +913,8 @@ asterConfig.initial = function() {
   this.dWidth = 10;
   this.dHeight = 10;
   this.speed = 0.1;
-  this.dy = Math.random() * __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height * 0.2;
-  this.dx = Math.random() * (__WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width - (2 * __WEBPACK_IMPORTED_MODULE_3__guard_js__["b" /* guardConfig */].width)) + __WEBPACK_IMPORTED_MODULE_3__guard_js__["b" /* guardConfig */].width;
+  this.dy = Math.random() * __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height * 0.2;
+  this.dx = Math.random() * (__WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width - (2 * __WEBPACK_IMPORTED_MODULE_3__guard_js__["b" /* guardConfig */].width)) + __WEBPACK_IMPORTED_MODULE_3__guard_js__["b" /* guardConfig */].width;
 /*  this.accessible = true;*/
 };
 
@@ -968,24 +927,24 @@ asterConfig.initial = function() {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return earthExplosionConfig; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__imageLoader__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sprite__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_imageLoader__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tools_sprite__ = __webpack_require__(2);
 
 
 
 
 
 let earthExplosionConfig = {
-  context: __WEBPACK_IMPORTED_MODULE_2__getCanvas__["b" /* ctx */],
+  context: __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */],
   width: 1024,
   height: 768,
   sx: 0,
   sy: 0,
-  image: __WEBPACK_IMPORTED_MODULE_0__imageLoader__["f" /* explosion2 */],
+  image: __WEBPACK_IMPORTED_MODULE_1__tools_imageLoader__["e" /* explosion2 */],
   dx: 0,
-  dy: __WEBPACK_IMPORTED_MODULE_2__getCanvas__["a" /* canvas */].height - 740,
-  dWidth: __WEBPACK_IMPORTED_MODULE_2__getCanvas__["a" /* canvas */].width,
+  dy: __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height - 740,
+  dWidth: __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width,
   dHeight: /*300*/ 768,
   extentionSpeed: 5,
   growSpeed: 10,
@@ -1002,8 +961,8 @@ let earthExplosionConfig = {
 
   animate() {
   	
- __WEBPACK_IMPORTED_MODULE_2__getCanvas__["b" /* ctx */].globalAlpha = this.opacity;
-    __WEBPACK_IMPORTED_MODULE_2__getCanvas__["b" /* ctx */].drawImage(
+ __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].globalAlpha = this.opacity;
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].drawImage(
       this.image,
       0,
       0,
@@ -1014,7 +973,7 @@ let earthExplosionConfig = {
       this.dWidth,
       this.dHeight);
 
-    __WEBPACK_IMPORTED_MODULE_2__getCanvas__["b" /* ctx */].globalAlpha = 1;
+    __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].globalAlpha = 1;
 
    /* if (this.dHeight < this.height) {
       this.dHeight += this.growSpeed;
@@ -1227,7 +1186,7 @@ module.exports = function(list, options) {
 
 	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
 	// tags it will allow on a page
-	if (!options.singleton) options.singleton = isOldIE();
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
 
 	// By default, add <style> tags to the <head> element
 	if (!options.insertInto) options.insertInto = "head";
@@ -1626,213 +1585,87 @@ module.exports = function (css) {
 
 /***/ }),
 /* 15 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["b"] = playPressDetection;
-/* harmony export (immutable) */ __webpack_exports__["a"] = contentBeforeGame;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getCanvas__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eventHandler__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__imageLoader__ = __webpack_require__(1);
-
-
-
-
-
-
-
-function playPressDetection() {
-  if(__WEBPACK_IMPORTED_MODULE_1__eventHandler__["a" /* clickCoordinates */].x && __WEBPACK_IMPORTED_MODULE_1__eventHandler__["a" /* clickCoordinates */].y) {
-    if ( __WEBPACK_IMPORTED_MODULE_1__eventHandler__["a" /* clickCoordinates */].x >= 100 && __WEBPACK_IMPORTED_MODULE_1__eventHandler__["a" /* clickCoordinates */].x <= 468 &&
-      __WEBPACK_IMPORTED_MODULE_1__eventHandler__["a" /* clickCoordinates */].y >= 115 && __WEBPACK_IMPORTED_MODULE_1__eventHandler__["a" /* clickCoordinates */].y <= 165) {
-      return true;
-    } 	
-  } else {
-    return false;
-  }
-}
-
-const guardWidth = 300;
-const guardHeight = 168;
-let h1 = __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.03;
-let h2 = __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.015;
-let text = __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.01;
-
-function contentBeforeGame() {
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = h1 + 'px Arial';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Welcome, guard!', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.4, 150 );
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#f00a0a';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Your mission is to protect Earth from asteroids', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.2, 170 + h1 );
-
-
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].beginPath();
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].rect( __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.1, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 - 50, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.8, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height * 0.4);
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].globalAlpha = 0.7;
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#21110b';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fill();
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].closePath();
-
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].globalAlpha = 1;
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#f00a0a';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = h2 + 'px Arial';
-
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_2__imageLoader__["g" /* guard */], __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width / 2 - 0.85 * guardWidth, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2, guardWidth, guardHeight);
-  
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('For accurate shots', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.12, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2);
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('You increase your speed', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.12, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 + 1.5 * h2);
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('But it\'s harder to hit the target', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.12, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 + 4.5 * h2);
-  
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Use LEFT and RIGHT arrows to move your ship', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width / 2 + 50, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2);
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Up and down arrows are blocked', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width / 2 + 50, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 + 1.5*h2 );
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('You\'re not allowed fly far away from Earth', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width / 2 + 50, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 + 3*h2 );
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Use SPACE for shotting', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width / 2 + 50, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 + 4.5*h2 );
-
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_2__imageLoader__["d" /* downArrow */], 0, 0, 488, 720, 145, 120, 50, 73.5 );
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = text + 'px Arial';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Press to begin', 70, 215);
-
-}
-
-
-
-
-/***/ }),
-/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/back2.jpg";
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/earth.png";
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/guard.png";
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/stars.png";
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/redAsteroid.png";
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "./img/drawn-explosion-sprite-3.png";
-
-/***/ }),
-/* 22 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/earthExplosion.png";
 
 /***/ }),
-/* 23 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/asteroidbelt5.gif";
 
 /***/ }),
-/* 24 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/clock.png";
 
 /***/ }),
-/* 25 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/shots.png";
 
 /***/ }),
-/* 26 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/speed.png";
 
 /***/ }),
-/* 27 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "./img/playbutton.png";
 
 /***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "./img/downArrow.png";
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "./img/leftArrow.png";
-
-/***/ }),
-/* 30 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = gameOver;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getCanvas__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__gameAttributes_js__ = __webpack_require__(3);
-
-
-
-
-const pictureNativeWidth = 241;
-const pictureNativeHeight = 178;
-let width = 300;
-let height = 210;
-
-function gameOver() {
-
-
-  let h1 = __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.05;
-  let h2 = __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.03;
-  let text = __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width * 0.02;
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = h1 + 'px Arial';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillStyle = 'black';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('GAME OVER', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width / 2 - (3 * h1), __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 - h1);
-  
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = h2 + 'px Arial';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText('Your results: ', __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width / 2 - (4 * h2), __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 );
- 
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].font = text + 'px Arial';
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText( 'Presision:  ' + __WEBPACK_IMPORTED_MODULE_1__gameAttributes_js__["a" /* attributes */].score + ' / ' + __WEBPACK_IMPORTED_MODULE_1__gameAttributes_js__["a" /* attributes */].shots, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width / 2 - (4 * h2), __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 + (2 * text));
-
-  __WEBPACK_IMPORTED_MODULE_0__getCanvas__["b" /* ctx */].fillText( 'Time:  ' + __WEBPACK_IMPORTED_MODULE_1__gameAttributes_js__["a" /* attributes */].time, __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].width / 2 - (4 * h2), __WEBPACK_IMPORTED_MODULE_0__getCanvas__["a" /* canvas */].height / 2 + (3 * text));
-
-}
-
-/***/ }),
-/* 31 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = shooting;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__eventHandler__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__gameAttributes__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handlers_eventHandler__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__appearanceAttributes_gameAttributes__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__instances_guard__ = __webpack_require__(4);
+
 
 
 
 
 let activeBulletsNumber = [];
 let spaceDown;
+let failingBullets = [];
 
 function shooting(ammunition){
 
@@ -1845,15 +1678,15 @@ function shooting(ammunition){
 
   let found = false;
   let i = 0;
-  spaceDown = Object(__WEBPACK_IMPORTED_MODULE_0__eventHandler__["b" /* getSpaceState */])();
+  spaceDown = Object(__WEBPACK_IMPORTED_MODULE_0__handlers_eventHandler__["b" /* getSpaceState */])();
 
   if(spaceDown) {
     while (!found && i < ammunition.length) {
       if (ammunition[i] && ammunition[i].accessible) {
         activeBulletsNumber.push(i);
-        __WEBPACK_IMPORTED_MODULE_1__gameAttributes__["a" /* attributes */].shots++;
+        __WEBPACK_IMPORTED_MODULE_1__appearanceAttributes_gameAttributes__["a" /* attributes */].shots++;
         found = true;
-        Object(__WEBPACK_IMPORTED_MODULE_0__eventHandler__["f" /* setSpaceState */])(false);
+        Object(__WEBPACK_IMPORTED_MODULE_0__handlers_eventHandler__["f" /* setSpaceState */])(false);
       }
       i++;
     }
@@ -1861,20 +1694,24 @@ function shooting(ammunition){
 
   for (let i = 0; i < activeBulletsNumber.length; i++) {
       ammunition[activeBulletsNumber[i]].moving();
+       if(ammunition[activeBulletsNumber[i]].dy <= 20 && __WEBPACK_IMPORTED_MODULE_2__instances_guard__["b" /* guardConfig */].step > 2 ) {
+        __WEBPACK_IMPORTED_MODULE_2__instances_guard__["b" /* guardConfig */].step -= 0.05;
+        __WEBPACK_IMPORTED_MODULE_1__appearanceAttributes_gameAttributes__["a" /* attributes */].speed = __WEBPACK_IMPORTED_MODULE_2__instances_guard__["b" /* guardConfig */].step;
+        __WEBPACK_IMPORTED_MODULE_1__appearanceAttributes_gameAttributes__["a" /* attributes */].messageText = "Your speed is reduced due to failure. Be more accurate";
+      }
+    }
+    return activeBulletsNumber;
     }
 
   
 
-    return activeBulletsNumber;
-}
-
 /***/ }),
-/* 32 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = asteroidsMoving;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__gameAttributes__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__appearanceAttributes_gameAttributes__ = __webpack_require__(3);
 
 
 const tickPerFrame = 1000;
@@ -1890,32 +1727,172 @@ function asteroidsMoving(asteroids) {
     asteroidsPerFrame = 1;
   } else if (counter < 3000) {
     asteroidsPerFrame = 2;
-  } else {
+  } else if (counter < 7000){
     asteroidsPerFrame = 3;
+  } else {
+    asteroidsPerFrame = 4;
+  }
+
+
+  if (counter > 1000 && counter < 1500) {
+    __WEBPACK_IMPORTED_MODULE_0__appearanceAttributes_gameAttributes__["a" /* attributes */].messageText = 'Do you see the second asteroid?';
+  } else if (counter > 3000 && counter < 3700)  {
+    __WEBPACK_IMPORTED_MODULE_0__appearanceAttributes_gameAttributes__["a" /* attributes */].messageText = 'There are already three threats on the horizon..';
+  } else if (counter > 7000 && counter < 8000) {
+    __WEBPACK_IMPORTED_MODULE_0__appearanceAttributes_gameAttributes__["a" /* attributes */].messageText = 'It seems we\'re getting into the asteroids belt!!!';
   }
 
   
   for (let i = 0; i < asteroidsPerFrame; i++) {  
     asteroids[i].moving();
-  } 
+      if (asteroids[i].dy > canvas.height * 0.4) {
+        __WEBPACK_IMPORTED_MODULE_0__appearanceAttributes_gameAttributes__["a" /* attributes */].messageText = "Caution! Be careful! Asteroid is too near!";
+      } 
+  }
+}
 
 
+
+
+/***/ }),
+/* 28 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["b"] = playPressDetection;
+/* harmony export (immutable) */ __webpack_exports__["a"] = contentBeforeGame;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__handlers_eventHandler__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tools_imageLoader__ = __webpack_require__(1);
+
+
+
+
+
+function playPressDetection() {
+  if(__WEBPACK_IMPORTED_MODULE_1__handlers_eventHandler__["a" /* clickCoordinates */].x && __WEBPACK_IMPORTED_MODULE_1__handlers_eventHandler__["a" /* clickCoordinates */].y) {
+    if ( __WEBPACK_IMPORTED_MODULE_1__handlers_eventHandler__["a" /* clickCoordinates */].x >= 100 && __WEBPACK_IMPORTED_MODULE_1__handlers_eventHandler__["a" /* clickCoordinates */].x <= 468 &&
+      __WEBPACK_IMPORTED_MODULE_1__handlers_eventHandler__["a" /* clickCoordinates */].y >= 115 && __WEBPACK_IMPORTED_MODULE_1__handlers_eventHandler__["a" /* clickCoordinates */].y <= 165) {
+      return true;
+    } 	
+  } else {
+    return false;
+  }
+}
+
+const guardWidth = 300;
+const guardHeight = 168;
+let h1 = __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.03;
+let h2 = __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.015;
+let text = __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.01;
+
+function contentBeforeGame() {
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = h1 + 'px Arial';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Welcome, guard!', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.4, 150 );
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#f00a0a';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Your mission is to protect Earth from asteroids', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.2, 170 + h1 );
+
+
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].beginPath();
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].rect( __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.1, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 - 50, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.8, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height * 0.4);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].globalAlpha = 0.7;
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#21110b';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fill();
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].closePath();
+
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].globalAlpha = 1;
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#f00a0a';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = h2 + 'px Arial';
+
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].drawImage(__WEBPACK_IMPORTED_MODULE_2__tools_imageLoader__["f" /* guard */], __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 - 0.85 * guardWidth, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2, guardWidth, guardHeight);
+  
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = '#ffffff';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('For accurate shots', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.12, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('You increase your speed', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.12, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 + 1.5 * h2);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('But it\'s harder to hit the target', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.12, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 + 4.5 * h2);
+  
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Use LEFT and RIGHT arrows to move your ship', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 + 50, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Up and down arrows are blocked', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 + 50, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 + 1.5*h2 );
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('You\'re not allowed fly far away from Earth', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 + 50, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 + 3*h2 );
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Use SPACE for shotting', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 + 50, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 + 4.5*h2 );
+
+  /*ctx.drawImage(downArrow, 0, 0, 488, 720, 145, 120, 50, 73.5 );*/
+ /* ctx.font = text + 'px Arial';
+  ctx.fillText('Press to begin', 70, 215);*/
+
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].beginPath();
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].globalAlpha = 0.5;
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].moveTo(__WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 - 0.85 * guardWidth, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].lineTo(154, 170);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].lineTo(160, 140);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].lineTo(__WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 - 0.84 * guardWidth, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = "red";
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fill();
+  
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].moveTo(130, 127);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].lineTo( 180, 220);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].lineTo( 200, 135);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].lineTo( 130, 127);
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = "red";
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fill();
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].globalAlpha = 1;
+
+}
+
+
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = gameOver;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__appearanceAttributes_gameAttributes_js__ = __webpack_require__(3);
+
+
+
+
+const pictureNativeWidth = 241;
+const pictureNativeHeight = 178;
+let width = 300;
+let height = 210;
+
+function gameOver() {
+
+
+  let h1 = __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.05;
+  let h2 = __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.03;
+  let text = __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width * 0.02;
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = h1 + 'px Arial';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillStyle = 'black';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('GAME OVER', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 - (3 * h1), __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 - h1);
+  
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = h2 + 'px Arial';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText('Your results: ', __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 - (4 * h2), __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 );
+ 
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].font = text + 'px Arial';
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText( 'Presision:  ' + __WEBPACK_IMPORTED_MODULE_1__appearanceAttributes_gameAttributes_js__["a" /* attributes */].score + ' / ' + __WEBPACK_IMPORTED_MODULE_1__appearanceAttributes_gameAttributes_js__["a" /* attributes */].shots, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 - (4 * h2), __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 + (2 * text));
+
+  __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["b" /* ctx */].fillText( 'Time:  ' + __WEBPACK_IMPORTED_MODULE_1__appearanceAttributes_gameAttributes_js__["a" /* attributes */].time, __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].width / 2 - (4 * h2), __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__["a" /* canvas */].height / 2 + (3 * text));
 
 }
 
 /***/ }),
-/* 33 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = hittingCollisionDetection;
 /* unused harmony export explosionDetection */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_getCanvas__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__instances_guard__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__instances_asteroids__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__gameAttributes__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__earthExplosionHandler__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appearanceAttributes_gameAttributes__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_background__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_earthExplosionHandler__ = __webpack_require__(9);
 
 
 
@@ -1934,8 +1911,8 @@ function hittingCollisionDetection(bullsNumber, bull, asteroids) {
 
         if ( bull[bullsNumber[i]].dy <= asteroids[j].dy + asteroids[j].dHeight
         && bull[bullsNumber[i]].dy >= asteroids[j].dy &&
-          bull[bullsNumber[i]].dx + (bull[bullsNumber[i]].width/2) >= asteroids[j].dx && 
-          bull[bullsNumber[i]].dx + (bull[bullsNumber[i]].width/2) <= asteroids[j].dx + asteroids[j].dWidth ) {
+          bull[bullsNumber[i]].dx + (bull[bullsNumber[i]].width/2) >= asteroids[j].dx * 0.95 && 
+          bull[bullsNumber[i]].dx + (bull[bullsNumber[i]].width/2) <= asteroids[j].dx + asteroids[j].dWidth * 1.05 ) {
 
             coordinates = {};
             coordinates.dx = asteroids[j].dx;
@@ -1948,14 +1925,14 @@ function hittingCollisionDetection(bullsNumber, bull, asteroids) {
       } 
     } 
   }  else {
-    console.log(__WEBPACK_IMPORTED_MODULE_5__earthExplosionHandler__["a" /* earthExplosionConfig */]);
-    __WEBPACK_IMPORTED_MODULE_5__earthExplosionHandler__["a" /* earthExplosionConfig */].setCoordinates(coordinates);
+    console.log(__WEBPACK_IMPORTED_MODULE_5__actions_earthExplosionHandler__["a" /* earthExplosionConfig */]);
+    __WEBPACK_IMPORTED_MODULE_5__actions_earthExplosionHandler__["a" /* earthExplosionConfig */].setCoordinates(coordinates);
   } 
 }
 
 function explosionDetection(asteroids) {
   for( let i = 0; i < asteroids.length; i++) {
-  	if ( asteroids[i].dy + asteroids[i].dHeight > __WEBPACK_IMPORTED_MODULE_4__background__["b" /* earthDy */] * 1.05) {
+  	if ( asteroids[i].dy + asteroids[i].dHeight > __WEBPACK_IMPORTED_MODULE_4__appearanceAttributes_background__["b" /* earthDy */] * 1.05) {
       coordinates = {};
 		  coordinates.dx = asteroids[i].dx;
       coordinates.dy = asteroids[i].dy;
@@ -1967,15 +1944,15 @@ function explosionDetection(asteroids) {
 }
 
 /***/ }),
-/* 34 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return explosionConfig; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = getReadyDestructor;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__imageLoader__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sprite__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__getCanvas__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_imageLoader__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_sprite__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tools_getCanvas__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__instances_guard__ = __webpack_require__(4);
 
 
@@ -1985,12 +1962,12 @@ function explosionDetection(asteroids) {
 
 
 let explosionConfig = {
-  context: __WEBPACK_IMPORTED_MODULE_2__getCanvas__["b" /* ctx */],
+  context: __WEBPACK_IMPORTED_MODULE_2__tools_getCanvas__["b" /* ctx */],
   width: 1000,
   height: 250,
   sx: 0,
   sy: 0,
-  image: __WEBPACK_IMPORTED_MODULE_0__imageLoader__["i" /* pieces */],
+  image: __WEBPACK_IMPORTED_MODULE_0__tools_imageLoader__["h" /* pieces */],
   dx: 0,
   dy: 0,
   dWidth: 30,
@@ -2033,8 +2010,6 @@ explosionConfig.getFlag = function() {
 
 explosionConfig.animate = function() {
   this.accessible = false;
-  console.log(this.dWidth);
-  console.log(this.growLimit);
   if (this.dWidth <= this.growLimit) {
    
   	this.render();

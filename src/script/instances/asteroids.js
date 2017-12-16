@@ -1,6 +1,6 @@
-import { canvas, ctx } from '../getCanvas';
-import { sprite } from '../sprite';
-import { asteroid } from '../imageLoader';
+import { canvas, ctx } from '../tools/getCanvas';
+import { sprite } from '../tools/sprite';
+import { asteroid } from '../tools/imageLoader';
 import { guardConfig } from './guard.js';
 
 let asteroidWidth = 750;
@@ -13,11 +13,11 @@ export let asterConfig = {
   image: asteroid,
   dx: Math.random() * (canvas.width - asteroidWidth) + (asteroidWidth / 2),
   dy: Math.random() * canvas.height * 0.1,
-  dWidth: 2,
-  dHeight: 2,
+  dWidth: 0.5,
+  dHeight: 0.5,
   speed: 0.3,
-  acceleration: 1.003,
-  growSpeed: 0.07,
+  acceleration: 1.005,
+  growSpeed: 0.08,
 };
 
 
